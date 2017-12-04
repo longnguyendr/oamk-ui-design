@@ -23,6 +23,10 @@ img {
 
 
 
+
+
+
+
 /*CSS Grid*/
 
 .wrapper {
@@ -61,33 +65,50 @@ img {
 }
 
 .grid-row2-1 {
-    grid-row: 2 / span 4;
+    /*RECOMMENDED*/
+    grid-row: 2 / span 5;
     grid-column: 2/3;
-    background: red;
+    /*background: red;*/
+    border: 3px solid #f7f7f7
 }
 
 .grid-row2-2 {
-    grid-row: 2 / span 4;
+    /*VIDEO*/
+    grid-row: 2 / span 5;
     grid-column: 3/8;
-    background: blue;
+    /*background: blue;*/
+    border: 3px solid #f7f7f7
 }
 
 .grid-row2-3 {
-    grid-row: 2 / span 4;
+    /*CHAT*/
+    grid-row: 2 / span 5;
     grid-column: 8/10;
-    background: green;
+    /*background: green;*/
+    border: 3px solid #f7f7f7
 }
 
-.grid-row6-1 {
-    grid-row: 6 / span 5;
+.grid-row7-1 {
+    /*STREAM INFO*/
+    grid-row: 7 / span 4;
     grid-column: 2/8;
-    background: black;
+    /*background: black;*/
+    border: 3px solid #f7f7f7
 }
 
-.grid-row6-2 {
-    grid-row: 6 / span 5;
+.grid-row7-2 {
+    /*NEWS*/
+    grid-row: 7 / span 5;
     grid-column: 8/10;
-    background: pink;
+    /*background: pink;*/
+    border: 3px solid #f7f7f7
 }
 
 
+.grid-row11-1 {
+    /*SCORES*/
+    grid-row: 11;
+    grid-column: 2/8;
+    /*background: red;*/
+    border: 3px solid #f7f7f7
+}
