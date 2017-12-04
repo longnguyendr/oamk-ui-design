@@ -1,0 +1,93 @@
+body {
+    /*background-size: 100%;*/
+    /*background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);*/
+    /*background: cover;*/
+    font-family: "Source Sans Pro";
+    color: #ffffff;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/*CSS Grid*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
+}
+
+.grid-row1 {
+    color: #ffffff;
+    grid-column: 2 / 3;
+    grid-row: 1;
+    /*background: white;*/
+    /*font-size: 18pt;*/
+    align-items: center;
+    align-self: center;
+}
+
+.grid-row1 h1 {
+    font-weight: 600;
+}
+
+.grid-row1-1 {
+    grid-column: 3 / 10;
+    grid-row: 1;
+    align-self: center;
+}
+
+.grid-row1-1 a {
+    padding-left: 50px;
+    font-size: 14pt;
+    color: white;
+    text-decoration: none;
+}
+
+.grid-row2-1 {
+    grid-row: 2 / span 4;
+    grid-column: 2/3;
+    background: red;
+}
+
+.grid-row2-2 {
+    grid-row: 2 / span 4;
+    grid-column: 3/8;
+    background: blue;
+}
+
+.grid-row2-3 {
+    grid-row: 2 / span 4;
+    grid-column: 8/10;
+    background: green;
+}
+
+.grid-row6-1 {
+    grid-row: 6 / span 5;
+    grid-column: 2/8;
+    background: black;
+}
+
+.grid-row6-2 {
+    grid-row: 6 / span 5;
+    grid-column: 8/10;
+    background: pink;
+}
+
+
