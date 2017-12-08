@@ -13,7 +13,6 @@ img {
     height: auto;
 }
 
-
 /* ------------------------------------ */
 /* new CSS Grid */
 
@@ -40,8 +39,9 @@ img {
 }
 
 .recommended {
+    z-index: 1;
     grid-area: rec;
-    border: 3px solid #f7f7f7
+    /*border: 3px solid #f7f7f7*/
 }
 
 .video {
@@ -60,11 +60,30 @@ img {
 
 .news{
     grid-area: news;
+    /*background: black;*/
+    line-height: 0.95;
+    padding-left: 10px;
 }
 
 .chat{
     grid-area: chat;
+    line-height: 0.95;
+    float: left;
+    /*background: black;*/
+    /*opacity: 0.5;*/
 }
+
+
+.chat b {
+    color: white;
+    background: black;
+}
+
+.chat p {
+    color: black;
+    background: white;
+}
+
 
 .foot{
     grid-area: foot;
@@ -73,6 +92,7 @@ img {
 
 
 .wrapper {
+    transition: all .5s ease-in-out;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-auto-rows: minmax(100px, auto);
@@ -88,8 +108,13 @@ img {
         ". foot foot foot foot foot foot foot foot .";
 }
 
+
+
+
+
 /* ------------------------------------- */
 /* ------ Responsive breakpoints ------- */
+/* ------ for devices ------------------ */
 /* ------------------------------------- */
 
 @media only screen and (min-device-width: 800px) and (max-device-width: 1200px){
@@ -141,6 +166,74 @@ img {
 
 
 
+/* ------------------------------------- */
+/* ------ Responsive breakpoints ------- */
+/* ------ for resolutions -------------- */
+/* ------------------------------------- */
+
+
+@media only screen and (min-width: 800px) and (max-width: 1100px){
+.wrapper{
+    grid-template-areas:
+    "head head head head head head head head head head"
+    "rec video video video video video video video chat chat"
+    "rec video video video video video video video chat chat"
+    "info info info info info info info info news news"
+    "info info info info info info info info news news"
+    "scores scores scores scores scores scores scores scores news news"
+    "foot foot foot foot foot foot foot foot foot foot";
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 799px){
+.wrapper{
+    grid-template-areas:
+    "head head head head head head head head head head"
+    "rec video video video video video video video chat chat"
+    "rec video video video video video video video chat chat"
+    "info info info info info info info info news news"
+    "info info info info info info info info news news"
+    "scores scores scores scores scores scores scores scores news news"
+    "foot foot foot foot foot foot foot foot foot foot";
+    }
+}
+
+
+@media only screen and (max-width: 599px){
+.wrapper{
+    grid-template-areas:
+        "head head head head head head head head head head"
+        "video video video video video video video video video video"
+        "info info info info info info info info info info"
+        "chat chat chat chat chat chat chat chat chat chat"
+        "scores scores scores scores scores scores scores scores scores scores"
+        "news news news news news news news news news news"
+        "foot foot foot foot foot foot foot foot foot foot";
+    }
+
+    .recommended{
+        display: none;
+    }
+}
+
+
+
+
+/* Animation for games */
+
+.games{
+    z-index: 1;
+    transition: all .2s ease-in-out;
+}
+
+.games:hover{
+    z-index: 2;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+    /*box-shadow: 0px 0px 50px #141414;*/
+    /*box-shadow: 0px 0px 150px #000000;*/
+}
 
 
 
