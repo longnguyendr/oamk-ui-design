@@ -88,15 +88,11 @@ img {
         ". foot foot foot foot foot foot foot foot .";
 }
 
-/* ------------------------------------ */
+/* ------------------------------------- */
+/* ------ Responsive breakpoints ------- */
+/* ------------------------------------- */
 
-
-
-
-
-
-
-@media only screen and (min-width: 800px) and (max-width: 1000px){
+@media only screen and (min-device-width: 800px) and (max-device-width: 1200px){
 .wrapper{
     grid-template-areas:
     "head head head head head head head head head head"
@@ -110,7 +106,7 @@ img {
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 799px){
+@media only screen and (min-device-width: 600px) and (max-device-width: 799px){
 .wrapper{
     grid-template-areas:
     "head head head head head head head head head head"
@@ -124,22 +120,22 @@ img {
 }
 
 
-@media only screen and (max-width: 599px){
+@media only screen and (max-device-width: 599px){
 .wrapper{
     grid-template-areas:
-"head head head head head head head head head head"
-"video video video video video video video video video video"
-"info info info info info info info info info info"
-"chat chat chat chat chat chat chat chat chat chat"
-"scores scores scores scores scores scores scores scores scores scores"
-"news news news news news news news news news news"
-"foot foot foot foot foot foot foot foot foot foot"
-". . . . . . . . . rec";
+        "head head head head head head head head head head"
+        "video video video video video video video video video video"
+        "info info info info info info info info info info"
+        "chat chat chat chat chat chat chat chat chat chat"
+        "scores scores scores scores scores scores scores scores scores scores"
+        "news news news news news news news news news news"
+        "foot foot foot foot foot foot foot foot foot foot";
+    }
+
+    .recommended{
+        display: none;
     }
 }
-
-
-
 
 
 
