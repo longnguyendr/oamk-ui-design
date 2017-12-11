@@ -7,7 +7,7 @@ body{
     
 }
 .es{
-    
+    font-family: "Source Sans Pro";
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 700;
@@ -20,6 +20,7 @@ body{
     
 }
 #nav_bar a{
+    font-family: "Source Sans Pro";
     margin-left: 3em;
     text-decoration: none;
     font-size: 20px;
@@ -107,3 +108,8 @@ i {
      float: left;
      margin-left: 5em;
    }
+
+   .post img {
+    border-radius: 15px;
+   
+  }
