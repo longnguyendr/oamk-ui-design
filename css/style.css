@@ -6,14 +6,10 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
 }
-<<<<<<< HEAD
-=======
 .head{
     padding: 3.5em;
-    
 }
 .es{
-    
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 700;
@@ -22,7 +18,6 @@ body {
     float: right;
     font-size: .9em;
     padding-top: 1em;
-    
 }
 #nav_bar a{
     margin-left: 2.5em;
@@ -30,10 +25,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: #fff;
-    
-
 }
->>>>>>> 98a4d55403665708065def4529fccd42235b6d59
 img {
     max-width: 100%;
     height: auto;
@@ -42,36 +34,16 @@ img {
 /* new CSS Grid */
 .head {
     grid-area: head;
-    
 }
-<<<<<<< HEAD
-.head h1 {
-    font-weight: 600;
-}
-.head a {
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 14pt;
-    color: white;
-    text-decoration: none;
-}
-=======
-
-
->>>>>>> 98a4d55403665708065def4529fccd42235b6d59
 .recommended {
     z-index: 1;
     grid-area: rec;
+    /*border: 3px solid #f7f7f7*/
 }
-<<<<<<< HEAD
-=======
-
 .recommended img{
     width: 143px;
     height: 72px;
 }
-
->>>>>>> 98a4d55403665708065def4529fccd42235b6d59
 .video {
     grid-area: video;
 }
@@ -113,45 +85,45 @@ img {
     background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
     grid-gap: 10px;
     grid-template-areas:
-    ". head head head head head head head head ."
-    ". rec video video video video video chat chat ."
-    ". rec video video video video video chat chat ."
-    ". info info info info info info news news ."
-    ". info info info info info info news news ."
-    ". scores scores scores scores scores scores news news ."
-    ". foot foot foot foot foot foot foot foot .";
+        ". head head head head head head head head ."
+        ". rec video video video video video chat chat ."
+        ". rec video video video video video chat chat ."
+        ". info info info info info info news news ."
+        ". info info info info info info news news ."
+        ". scores scores scores scores scores scores news news ."
+        ". foot foot foot foot foot foot foot foot .";
 }
 /* ------------------------------------- */
 /* ------ Responsive breakpoints ------- */
 /* ------ for devices ------------------ */
 /* ------------------------------------- */
 @media only screen and (min-device-width: 800px) and (max-device-width: 1200px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "rec video video video video video video video chat chat"
-        "rec video video video video video video video chat chat"
-        "info info info info info info info info news news"
-        "info info info info info info info info news news"
-        "scores scores scores scores scores scores scores scores news news"
-        "foot foot foot foot foot foot foot foot foot foot";
+.wrapper{
+    grid-template-areas:
+    "head head head head head head head head head head"
+    "rec video video video video video video video chat chat"
+    "rec video video video video video video video chat chat"
+    "info info info info info info info info news news"
+    "info info info info info info info info news news"
+    "scores scores scores scores scores scores scores scores news news"
+    "foot foot foot foot foot foot foot foot foot foot";
     }
 }
 @media only screen and (min-device-width: 600px) and (max-device-width: 799px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "rec video video video video video video video chat chat"
-        "rec video video video video video video video chat chat"
-        "info info info info info info info info news news"
-        "info info info info info info info info news news"
-        "scores scores scores scores scores scores scores scores news news"
-        "foot foot foot foot foot foot foot foot foot foot";
+.wrapper{
+    grid-template-areas:
+    "head head head head head head head head head head"
+    "rec video video video video video video video chat chat"
+    "rec video video video video video video video chat chat"
+    "info info info info info info info info news news"
+    "info info info info info info info info news news"
+    "scores scores scores scores scores scores scores scores news news"
+    "foot foot foot foot foot foot foot foot foot foot";
     }
 }
 @media only screen and (max-device-width: 599px){
-    .wrapper{
-        grid-template-areas:
+.wrapper{
+    grid-template-areas:
         "head head head head head head head head head head"
         "video video video video video video video video video video"
         "info info info info info info info info info info"
@@ -169,32 +141,32 @@ img {
 /* ------ for resolutions -------------- */
 /* ------------------------------------- */
 @media only screen and (min-width: 800px) and (max-width: 1100px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "rec video video video video video video video chat chat"
-        "rec video video video video video video video chat chat"
-        "info info info info info info info info news news"
-        "info info info info info info info info news news"
-        "scores scores scores scores scores scores scores scores news news"
-        "foot foot foot foot foot foot foot foot foot foot";
+.wrapper{
+    grid-template-areas:
+    "head head head head head head head head head head"
+    "rec video video video video video video video chat chat"
+    "rec video video video video video video video chat chat"
+    "info info info info info info info info news news"
+    "info info info info info info info info news news"
+    "scores scores scores scores scores scores scores scores news news"
+    "foot foot foot foot foot foot foot foot foot foot";
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 799px){
-    .wrapper{
-        grid-template-areas:
-        "head head head head head head head head head head"
-        "rec video video video video video video video chat chat"
-        "rec video video video video video video video chat chat"
-        "info info info info info info info info news news"
-        "info info info info info info info info news news"
-        "scores scores scores scores scores scores scores scores news news"
-        "foot foot foot foot foot foot foot foot foot foot";
+.wrapper{
+    grid-template-areas:
+    "head head head head head head head head head head"
+    "rec video video video video video video video chat chat"
+    "rec video video video video video video video chat chat"
+    "info info info info info info info info news news"
+    "info info info info info info info info news news"
+    "scores scores scores scores scores scores scores scores news news"
+    "foot foot foot foot foot foot foot foot foot foot";
     }
 }
 @media only screen and (max-width: 599px){
-    .wrapper{
-        grid-template-areas:
+.wrapper{
+    grid-template-areas:
         "head head head head head head head head head head"
         "video video video video video video video video video video"
         "info info info info info info info info info info"
@@ -219,7 +191,6 @@ img {
     /*box-shadow: 0px 0px 50px #141414;*/
     /*box-shadow: 0px 0px 150px #000000;*/
 }
-<<<<<<< HEAD
 /*TODO change classes to navbar IDs*/
 ul {
     list-style-type: none;
@@ -304,24 +275,3 @@ li a:hover:not(.active) {
 #event-6{ grid-area:  3 / 6  / 10 / 6; }
 #event-7{ grid-area:  5 / 7  / 10 / 7; background: #ac00b0;}
 #event-8{ grid-area:  6 / 8  / 10 / 8; height: 100px; background: #00a1f2; }
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 98a4d55403665708065def4529fccd42235b6d59
