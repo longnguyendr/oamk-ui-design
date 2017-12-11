@@ -1,17 +1,12 @@
-body{
-    background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
-    font-family: "Source Sans Pro";
-}
 .head{
     padding: 3.5em 10em;
     
 }
 .es{
-    font-family: "Source Sans Pro";
+    
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 700;
-    color: black;
 }
 #nav_bar{
     float: right;
@@ -20,12 +15,10 @@ body{
     
 }
 #nav_bar a{
-    font-family: "Source Sans Pro";
     margin-left: 3em;
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
-    color: #fff;
     
 }
 #nav_bar img{
@@ -84,7 +77,7 @@ h2{
 i {
     border: solid black;
     border-width: 0 2px 2px 0;
-    
+    display: inline-block;
     float: right;
     padding: 5px;
     margin-right: 1em;
@@ -108,8 +101,3 @@ i {
      float: left;
      margin-left: 5em;
    }
-
-   .post img {
-    border-radius: 15px;
-   
-  }

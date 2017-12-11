@@ -216,13 +216,13 @@ input[type='password']:focus {
 }
  
 .back-btn {
-  color: #fff;
-  background: #726165;
+  color: #f62f5e;
+  background: #fff;
 }
  
 .next-btn {
   color: #fff;
-  background: #726165;
+  background: #f62f5e;
 }
  
 .btn:focus {

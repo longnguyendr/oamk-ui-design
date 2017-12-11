@@ -148,12 +148,12 @@ label {
   font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
 }
 
-.check{
+.checkout {
   float: right;
   border: 0;
   margin-top: 20px;
   padding: 6px 25px;
-  background-color: rgb(137, 150, 137);
+  background-color: #6b6;
   color: #fff;
   font-size: 25px;
   border-radius: 3px;
@@ -163,7 +163,7 @@ label {
   border: 0;
   margin-top: 20px;
   padding: 6px 25px;
-  background-color: rgb(136, 155, 136);
+  background-color: #6b6;
   color: #fff;
   font-size: 25px;
   border-radius: 3px;
@@ -171,11 +171,7 @@ label {
 
 
 
-.check:hover {
-  background-color: #494;
-  
-}
-.back:hover {
+.checkout:hover .back:hover {
   background-color: #494;
   
 }
