@@ -1,160 +1,118 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>eSporthub</title>
-  <link rel="stylesheet" href="css/news.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>eSporthub - News</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/news.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 </head>
-
 <body>
-  <div class="wrapper">
-    <div class="grid-row1">
-     <h1><a href="index.html" style="text-decoration: none; color: white;"> eSporthub</a></h1>
-   </div>
-   <div class="grid-row1-1">
-    <a href="games.html" title="">Game</a>
-    <a href="events.html" title="">Events</a>
-    <a href="store.html" title="">Store</a>
-    <a href="news.html" title="" style="color: yellow;">News</a>
-    <a href="betting.html" title="" >Betting</a>
-    <a href="login.html" title="">Login</a>
-  </div>
-  <div class="grid-row2-news"><h3>NEWS</h3>
-    <div class="grid-row2-filter-news">
-      <div class="grid-container-news">
-        <div  ><b>Filter</b></div>
-        <div class="news-filter" >FPS</div>
-        <div class="news-filter" >MOBA</div>
-        <div class="news-filter">Strategy</div>
-        <div class="news-filter" >PlatFormer</div>
+  <div class="wrapper-news">
+    <div class="head">
+      <a class="es">eSportHub</a>
+      <div id="nav_bar">
+        <a href="index.html" title="">Home</a>
+        <a href="events.html" title="">Events</a>
+        <a href="store.html" title="">Store</a>
+        <a href="news.html" title="">News</a>
+        <a href="betting.html" title="">Betting</a>
+        <a>
+          <input class="search" type="text" name="search" placeholder="Search">
+        </a>
+        <a href="login.html">Login/SignUp</a>
       </div>
-
-      <div class="grid-container-news">
-       <div class="news-filter" >Past hour</div>
-       <div class="news-filter" >Past two hours</div>
-       <div class="news-filter" >Today</div>
-       <div class="news-filter">Yesterday</div>
-       <div class="news-filter" >This week</div>
-     </div>
-   </div>
-
-<div class="articles">
-   <div class="article">
-    <h3>"Brazil can support an Overwatch League team in the future"</h3>
-    <h4>Source : Best Gamming News   11.12.2017</h4>
-  </div>
-
-  <div class="article" style="height: 200px;">
-    <img src="img/news-1.jpg" alt="News-1" style="width:900px;height:200px";>
-</div>
-
-  <div class="article">
-    <p>Answering fan questions in a Reddit Ask Me Anything (AMA) post, Overwatch League commissioner Nate Nanzer discussed the league's future expansion.
-
-Europe and Brazil, in particular, are two areas of focus for future seasons, Nanzer said.
-
-"Europe is a very important region with a ton of great players," Nanzer wrote. "In fact, there are 30 European players in the Overwatch League this season.
-Europe is also a key focus for us as we look to expand the league to add more teams in future seasons.
-Brazil is also an area of focus for us, and a country that we think can definitely support an Overwatch League team in the future."</p>
-    <input type="submit" value="Comments" style="margin-left:250px;">
-    <input type="submit" value="Share" style="margin-left:30px;">
-  </div>
-</div>
-
-<div class="articles">
-  <div class="article-1">
-   <h3>Elements Pro Gaming drops their squad, but does't give up on Dota 2 yet"</h3>
-   <h4>Source : Cybersport   11.12.2017</h4>
-  </div>
-
-  <div class="article-1" style="height: 200px;">
-   <img src="img/news-2.jpg" alt="News-1" style="width:900px;height:200px";>
-  </div>
-
-  <div class="article-1">
-   <p>Elements Pro decided to drop their Dota 2 squad and try again with a new team, not giving up on the Dota 2 scene.
-     Ever since forming the roster in September EPG dropped out of the Dota 2 scene radar, unsurprisingly disbanding after lack of results.</p>
-     <input type="submit" value="Comments" style="margin-left:250px;">
-     <input type="submit" value="Share" style="margin-left:30px;">
-  </div>
-</div>
-
-
-</div>
-<div class="featured-stories">
-  <h2>Featured Stories</h2>
-  <div class="featured-articles-1">
-    <h3><a href="http://www.vpgame.com/event/dota/86787.html">Ninjas in Pyjamas secure consecutive IEM Oakland title</a></h3>
-
-    <div style="float: right; height: 100px; width: 100px; background-color: white;">
-     <img src="img/features-1.png" alt="News-1" style="width:150px;height:100px";>
     </div>
-    <p>NiP have pulled off the upset in the grand final of IEM Oakland, defeating FaZe in a
-      best-of-five marathon 3-2 (Cobblestone 16-10, Inferno 7-16, Train 16-10, Overpass 6-16, Cache 16-10).</p>
-  </div>
-
-  <div class="featured-articles-2">
-    <h3><a href="http://www.vpgame.com/event/dota/88810.html">Alliance are ready to build a New Legacy with a mix of new and old faces</a></h3>
-
-    <div style="float: right; height: 100px; width: 100px; background-color: blue;">
-      <img src="img/features-2.jpg" alt="News-1" style="width:150px;height:100px";>
+    <div class="news-grid">
+      <h1>NEWS</h1>
+      <div class="grid-row2-filter-news">
+        <div class="grid-container-news">
+          <b>Filter</b>
+          <div class="news-filter">FPS</div>
+          <div class="news-filter">MOBA</div>
+          <div class="news-filter">Strategy</div>
+          <div class="news-filter">PlatFormer</div>
+        </div>
+        <div class="grid-container-news">
+          <div class="news-filter">Past hour</div>
+          <div class="news-filter">Past two hours</div>
+          <div class="news-filter">Today</div>
+          <div class="news-filter">Yesterday</div>
+          <div class="news-filter">This week</div>
+        </div>
+      </div>
+      <div class="articles">
+        <div class="article">
+          <h2>"Brazil can support an Overwatch League team in the future"</h2>
+          <h3>Source : Best Gamming News   11.12.2017</h3>
+        </div>
+        <div class="article" style="height: 200px;">
+          <img src="img/news-1.jpg" alt="News-1" style="width:900px;height:200px" ;>
+        </div>
+        <div class="article">
+          <p>Answering fan questions in a Reddit Ask Me Anything (AMA) post, Overwatch League commissioner Nate Nanzer discussed the league's future expansion. Europe and Brazil, in particular, are two areas of focus for future seasons, Nanzer said. "Europe is a very important region with a ton of great players," Nanzer wrote. "In fact, there are 30 European players in the Overwatch League this season. Europe is also a key focus for us as we look to expand the league to add more teams in future seasons. Brazil is also an area of focus for us, and a country that we think can definitely support an Overwatch League team in the future."</p>
+          <input type="submit" value="Comments" style="margin-left:250px;">
+          <input type="submit" value="Share" style="margin-left:30px;">
+        </div>
+      </div>
+      <div class="articles">
+        <h2>Elements Pro Gaming drops their squad, but does't give up on Dota 2 yet"</h2>
+        <h3>Source : Cybersport   11.12.2017</h3>
+        <div style="height: 200px;">
+          <img src="img/news-2.jpg" alt="News-1" style="width:900px;height:200px" ;>
+        </div>
+        <p>Elements Pro decided to drop their Dota 2 squad and try again with a new team, not giving up on the Dota 2 scene. Ever since forming the roster in September EPG dropped out of the Dota 2 scene radar, unsurprisingly disbanding after lack of results.</p>
+        <input type="submit" value="Comments" style="margin-left:250px;">
+        <input type="submit" value="Share" style="margin-left:30px;">
+      </div>
     </div>
-    <p>After months of search and tryouts, Jonathan "Loda" Berg is finally ready to present his new rosterfor the coming 2018. Being late to the season,
-      The Alliance will be focusing on practice and preparations for upcoming Minor and Major qualifiers.</p>
-  </div>
-
-  <div class="featured-articles-3">
-    <h3><a href="http://www.vpgame.com/event/dota/88313.html">Sccc and most of LGD.Forever Young are the best players in China in 2017</a></h3>
-
-    <div style="float: right; height: 100px; width: 100px; background-color: green;">
-      <img src="img/features-3.jpg" alt="News-1" style="width:150px;height:100px";>
+    <div class="featured-stories">
+      <h2>Featured Stories</h2>
+      <div class="featured-article">
+        <h3><a href="http://www.vpgame.com/event/dota/86787.html">Ninjas in Pyjamas secure consecutive IEM Oakland title</a></h3>
+        <div style="float: right; height: 100px; width: 100px; background-color: white;">
+          <img src="img/features-1.png" alt="News-1" style="width:150px;height:100px" ;>
+        </div>
+        <p>NiP have pulled off the upset in the grand final of IEM Oakland, defeating FaZe in a best-of-five marathon 3-2 (Cobblestone 16-10, Inferno 7-16, Train 16-10, Overpass 6-16, Cache 16-10).</p>
+      </div>
+      <div class="featured-article">
+        <h3><a href="http://www.vpgame.com/event/dota/88810.html">Alliance are ready to build a New Legacy with a mix of new and old faces</a></h3>
+        <div style="float: right; height: 100px; width: 100px; background-color: blue;">
+          <img src="img/features-2.jpg" alt="News-1" style="width:150px;height:100px" ;>
+        </div>
+        <p>After months of search and tryouts, Jonathan "Loda" Berg is finally ready to present his new rosterfor the coming 2018. Being late to the season, The Alliance will be focusing on practice and preparations for upcoming Minor and Major qualifiers.</p>
+      </div>
+      <div class="featured-article">
+        <h3><a href="http://www.vpgame.com/event/dota/88313.html">Sccc and most of LGD.Forever Young are the best players in China in 2017</a></h3>
+        <div style="float: right; height: 100px; width: 100px; background-color: green;">
+          <img src="img/features-3.jpg" alt="News-1" style="width:150px;height:100px" ;>
+        </div>
+        <p>Perfect World held its own annual Award Ceremony during the recent Perfect World Master Minor, announcing the best Chinese players per position in 2017. Four out of five nominees are players LGD.Forever Young, while the best mid laner in the world award went to Song "Sccc" Chunfrom Newbee.</p>
+      </div>
+      <div class="featured-article">
+        <h3><a href="http://www.vpgame.com/event/dota/81936.html">VP smash Team Secret to claim their first Major victory at Hamburg</a></h3>
+        <div style="float: right; height: 100px; width: 100px; background-color: red;">
+          <img src="img/features-4.jpg" alt="News-1" style="width:150px;height:100px" ;>
+        </div>
+        <p>ESL One Hamburg 2017 crowns its champions, as Virtus.pro G2A take down Team Secret in a confident 2-0 series to earn $500,000 and 750 Qualifying Points, as well as denying Clement "Puppey" Ivanov his chance at earning his 900th win in professional Dota 2.</p>
+      </div>
+      <div class="featured-article">
+        <h3><a href="http://www.vpgame.com/event/dota/87809.html">DreamHack Winter 2017 - A Gambit and Zeus Reunion</a></h3>
+        <div style="float: right; height: 100px; width: 100px; background-color: pink;">
+          <img src="img/features-5.jpg" alt="News-1" style="width:150px;height:100px" ;>
+        </div>
+        <p>DreamHack Winter 2017 is not a large international LAN. It has a good mix of teams including: BIG, Gambit, Na`Vi, EnVyUs, North Academy, Heroic, mouz and Rise Nation. It feels like an undercard event to the ESL Proleague Finals that are set to happen two days after this ends. But for Gambit and Na`Vi in particular, this is an incredibly important event to win. After all this was where it all started for Gambit and their former in-game leader Daniil “Zeus” Teslenko.</p>
+      </div>
+      <div class="featured-article">
+        <h3><a href="http://www.vpgame.com/event/dota/88544.html">What I do to keep up with various esports titlese</a></h3>
+        <div style="float: right; height: 100px; width: 100px; background-color: violet;">
+          <img src="img/features-6.jpg" alt="News-1" style="width:150px;height:100px" ;>
+        </div>
+        <p>Someone asked me this on twitter so I thought I’d answer in a blog. I’m one of the few people to watch this amount of esports games (CS:GO, Dota 2, Starcraft 2, Street Fighter/FGC, Melee, LoL, Overwatch, BW) and be able to talk about them in-depth.</p>
+      </div>
     </div>
-    <p>Perfect World held its own annual Award Ceremony during the recent Perfect World Master Minor, announcing the best Chinese players per position in 2017.
-      Four out of five nominees are players LGD.Forever Young,
-      while the best mid laner in the world award went to Song "Sccc" Chunfrom Newbee.</p>
   </div>
-
-  <div class="featured-articles-4">
-    <h3><a href="http://www.vpgame.com/event/dota/81936.html">VP smash Team Secret to claim their first Major victory at Hamburg</a></h3>
-
-    <div style="float: right; height: 100px; width: 100px; background-color: red;">
-      <img src="img/features-4.jpg" alt="News-1" style="width:150px;height:100px";>
-    </div>
-    <p>ESL One Hamburg 2017 crowns its champions, as Virtus.pro G2A take down Team Secret in a confident 2-0 series to earn $500,000 and 750 Qualifying Points,
-       as well as denying Clement "Puppey" Ivanov his chance at earning his 900th win in professional Dota 2.</p>
-  </div>
-
-  <div class="featured-articles-5">
-    <h3><a href="http://www.vpgame.com/event/dota/87809.html">DreamHack Winter 2017 - A Gambit and Zeus Reunion</a></h3>
-
-    <div style="float: right; height: 100px; width: 100px; background-color: pink;">
-      <img src="img/features-5.jpg" alt="News-1" style="width:150px;height:100px";>
-    </div>
-    <p>DreamHack Winter 2017 is not a large international LAN. It has a good mix of teams including: BIG, Gambit, Na`Vi, EnVyUs, North Academy, Heroic, mouz and Rise Nation.
-      It feels like an undercard event to the ESL Proleague Finals that are set to happen two days after this ends. But for Gambit and Na`Vi in particular, this is an incredibly important event to win.
-      After all this was where it all started for Gambit and their former in-game leader Daniil “Zeus” Teslenko.</p>
-  </div>
-
-  <div class="featured-articles-6">
-    <h3><a href="http://www.vpgame.com/event/dota/88544.html">What I do to keep up with various esports titlese</a></h3>
-
-    <div style="float: right; height: 100px; width: 100px; background-color: violet;">
-    <img src="img/features-6.jpg" alt="News-1" style="width:150px;height:100px";>
-    </div>
-    <p>Someone asked me this on twitter so I thought I’d answer in a blog. I’m one of the few people to
-      watch this amount of esports games (CS:GO, Dota 2, Starcraft 2, Street Fighter/FGC, Melee, LoL, Overwatch, BW)
-      and be able to talk about them in-depth.</p>
-  </div>
-
-</div>
-
-
-
-</div>
-
 </body>
-
 </html>
