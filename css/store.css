@@ -1,0 +1,103 @@
+.head{
+    padding: 3.5em 10em;
+    
+}
+.es{
+    
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+#nav_bar{
+    float: right;
+    font-size: .9em;
+    padding-top: 1em;
+    
+}
+#nav_bar a{
+    margin-left: 3em;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+#nav_bar img{
+    width: 50px;
+    height: 50px;
+    margin-top: -6em;
+}
+
+
+
+
+
+
+#search{
+    float: right;
+    margin-right: 15em;
+    height: 30px;
+    width: 250px;
+    margin-top: -3em;
+}
+h2{
+    font-size: 30px;
+    margin-left: 7em;
+   
+    margin-top: 2em;
+    
+}
+.dropdown{
+    float: left;
+    margin-left: 5em;
+    height: 50px;
+    margin-top: 3em;
+}
+#b1{
+    width: 120px;
+    height: 50px;
+    margin-left: 15em;
+    border-radius: 3px;
+}
+#b2{
+    width: 120px;
+    height: 50px;
+    border-radius: 3px;
+}
+#b3{
+    width: 120px;
+    height: 50px;
+    border-radius: 3px;
+}
+#b4{
+    width: 120px;
+    height: 50px;
+    margin-left: 5em;
+    border-radius: 3px;
+}
+i {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    float: right;
+    padding: 5px;
+    margin-right: 1em;
+    transform: rotate(45deg);
+  }
+  
+.number{
+    height: 44px;
+    width: 50px;
+}
+#stuffs{
+   margin-left: 12.5em;
+}
+.post{
+    
+    margin-right: 2.5%; 
+}
+.post{
+     border-radius: .5em;
+     margin: 1.75em 0;
+     float: left;
+     margin-left: 5em;
+   }

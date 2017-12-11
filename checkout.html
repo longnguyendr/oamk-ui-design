@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/checkout.css">
+    <script href="checkout.js">
+
+    </script>
+  
+
+<div class="checkout-panel">
+  <div class="panel-body">
+    <h2 class="title">Checkout</h2>
+ 
+    
+ 
+    <div class="payment-method">
+      <label for="card" class="method card">
+        <div class="card-logos">
+          <img src="img/visalogo.png" width="75px" height="60px" >
+          <img src="img/mastercardlogo.png" width="75px" height="60px" >
+         
+        </div>
+ 
+        <div class="radio-input">
+          <input id="card" type="radio" name="payment">
+          Pay £340.00 with credit card
+        </div>
+      </label>
+ 
+      <label for="paypal" class="method paypal">
+        <img src="img/paypallogo.png" width="150px" height="60px">
+        <div class="radio-input">
+          <input id="paypal" type="radio" name="payment">
+          Pay £340.00 with PayPal
+        </div>
+      </label>
+    </div>
+ 
+    <div class="input-fields">
+      <div class="column-1">
+        <label for="cardholder">Cardholder's Name</label>
+        <input type="text" id="cardholder" />
+ 
+        <div class="small-inputs">
+          <div>
+            <label for="date">Valid thru</label>
+            <input type="text" id="date" placeholder="MM / YY" />
+          </div>
+ 
+          <div>
+            <label for="verification">CVV / CVC *</label>
+            <input type="password" id="verification"/>
+          </div>
+        </div>
+ 
+      </div>
+      <div class="column-2">
+        <label for="cardnumber">Card Number</label>
+        <input type="password" id="cardnumber"/>
+ 
+        <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="panel-footer">
+    <button onclick="window.location.href='cart.html'" class="btn back-btn" >Back</button>
+    <button onclick="window.location.href='finish.html'" class="btn next-btn">Next Step</button>
+  </div>
+</div>
+</head>
+<body>
+
+</body>
+</html>
