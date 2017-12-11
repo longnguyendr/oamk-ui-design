@@ -6,8 +6,31 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
 }
+.head{
+    padding: 3.5em;
+    
+}
+.es{
+    
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+#nav_bar{
+    float: right;
+    font-size: .9em;
+    padding-top: 1em;
+    
+}
+#nav_bar a{
+    margin-left: 2.5em;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    
 
-
+}
 img {
     max-width: 100%;
     height: auto;
@@ -19,29 +42,19 @@ img {
 
 .head {
     grid-area: head;
-    color: #ffffff;
-    /*grid-column: 2 / 3;*/
-    /*grid-row: 1;*/
-    align-items: center;
-    align-self: center;
+    
 }
 
-.head h1 {
-    font-weight: 600;
-}
-
-.head a {
-    padding-left: 35px;
-    padding-right: 35px;
-    font-size: 14pt;
-    color: white;
-    text-decoration: none;
-}
 
 .recommended {
     z-index: 1;
     grid-area: rec;
     /*border: 3px solid #f7f7f7*/
+}
+
+.recommended img{
+    width: 143px;
+    height: 72px;
 }
 
 .video {
@@ -239,36 +252,6 @@ img {
 
 
 
-
-/*TODO change classes to navbar IDs*/
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #4CAF50;
-}
 
 
 
