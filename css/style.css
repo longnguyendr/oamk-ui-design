@@ -6,30 +6,48 @@ body {
     margin-bottom: 0px;
     margin-left: 0px;
 }
+<<<<<<< HEAD
+=======
+.head{
+    padding: 3.5em;
+    
+}
+.es{
+    
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+#nav_bar{
+    float: right;
+    font-size: .9em;
+    padding-top: 1em;
+    
+}
+#nav_bar a{
+    margin-left: 2.5em;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    
 
-
+}
+>>>>>>> 98a4d55403665708065def4529fccd42235b6d59
 img {
     max-width: 100%;
     height: auto;
 }
-
 /* ------------------------------------ */
 /* new CSS Grid */
-
-
 .head {
     grid-area: head;
-    color: #ffffff;
-    /*grid-column: 2 / 3;*/
-    /*grid-row: 1;*/
-    align-items: center;
-    align-self: center;
+    
 }
-
+<<<<<<< HEAD
 .head h1 {
     font-weight: 600;
 }
-
 .head a {
     padding-left: 35px;
     padding-right: 35px;
@@ -37,34 +55,38 @@ img {
     color: white;
     text-decoration: none;
 }
+=======
 
+
+>>>>>>> 98a4d55403665708065def4529fccd42235b6d59
 .recommended {
     z-index: 1;
     grid-area: rec;
-    /*border: 3px solid #f7f7f7*/
+}
+<<<<<<< HEAD
+=======
+
+.recommended img{
+    width: 143px;
+    height: 72px;
 }
 
+>>>>>>> 98a4d55403665708065def4529fccd42235b6d59
 .video {
     grid-area: video;
 }
-
 .info{
     grid-area: info;
 }
-
-
 .scores{
     grid-area: scores;
 }
-
-
 .news{
     grid-area: news;
     /*background: black;*/
     line-height: 0.95;
     padding-left: 10px;
 }
-
 .chat{
     grid-area: chat;
     line-height: 0.95;
@@ -72,25 +94,17 @@ img {
     /*background: black;*/
     /*opacity: 0.5;*/
 }
-
-
 .chat b {
     color: white;
     background: black;
 }
-
 .chat p {
     color: black;
     background: white;
 }
-
-
 .foot{
     grid-area: foot;
 }
-
-
-
 .wrapper {
     transition: all .5s ease-in-out;
     display: grid;
@@ -99,55 +113,45 @@ img {
     background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
     grid-gap: 10px;
     grid-template-areas:
-        ". head head head head head head head head ."
-        ". rec video video video video video chat chat ."
-        ". rec video video video video video chat chat ."
-        ". info info info info info info news news ."
-        ". info info info info info info news news ."
-        ". scores scores scores scores scores scores news news ."
-        ". foot foot foot foot foot foot foot foot .";
+    ". head head head head head head head head ."
+    ". rec video video video video video chat chat ."
+    ". rec video video video video video chat chat ."
+    ". info info info info info info news news ."
+    ". info info info info info info news news ."
+    ". scores scores scores scores scores scores news news ."
+    ". foot foot foot foot foot foot foot foot .";
 }
-
-
-
-
-
 /* ------------------------------------- */
 /* ------ Responsive breakpoints ------- */
 /* ------ for devices ------------------ */
 /* ------------------------------------- */
-
 @media only screen and (min-device-width: 800px) and (max-device-width: 1200px){
-.wrapper{
-    grid-template-areas:
-    "head head head head head head head head head head"
-    "rec video video video video video video video chat chat"
-    "rec video video video video video video video chat chat"
-    "info info info info info info info info news news"
-    "info info info info info info info info news news"
-    "scores scores scores scores scores scores scores scores news news"
-    "foot foot foot foot foot foot foot foot foot foot";
+    .wrapper{
+        grid-template-areas:
+        "head head head head head head head head head head"
+        "rec video video video video video video video chat chat"
+        "rec video video video video video video video chat chat"
+        "info info info info info info info info news news"
+        "info info info info info info info info news news"
+        "scores scores scores scores scores scores scores scores news news"
+        "foot foot foot foot foot foot foot foot foot foot";
     }
 }
-
-
 @media only screen and (min-device-width: 600px) and (max-device-width: 799px){
-.wrapper{
-    grid-template-areas:
-    "head head head head head head head head head head"
-    "rec video video video video video video video chat chat"
-    "rec video video video video video video video chat chat"
-    "info info info info info info info info news news"
-    "info info info info info info info info news news"
-    "scores scores scores scores scores scores scores scores news news"
-    "foot foot foot foot foot foot foot foot foot foot";
+    .wrapper{
+        grid-template-areas:
+        "head head head head head head head head head head"
+        "rec video video video video video video video chat chat"
+        "rec video video video video video video video chat chat"
+        "info info info info info info info info news news"
+        "info info info info info info info info news news"
+        "scores scores scores scores scores scores scores scores news news"
+        "foot foot foot foot foot foot foot foot foot foot";
     }
 }
-
-
 @media only screen and (max-device-width: 599px){
-.wrapper{
-    grid-template-areas:
+    .wrapper{
+        grid-template-areas:
         "head head head head head head head head head head"
         "video video video video video video video video video video"
         "info info info info info info info info info info"
@@ -156,53 +160,41 @@ img {
         "news news news news news news news news news news"
         "foot foot foot foot foot foot foot foot foot foot";
     }
-
     .recommended{
         display: none;
     }
 }
-
-
-
-
-
 /* ------------------------------------- */
 /* ------ Responsive breakpoints ------- */
 /* ------ for resolutions -------------- */
 /* ------------------------------------- */
-
-
 @media only screen and (min-width: 800px) and (max-width: 1100px){
-.wrapper{
-    grid-template-areas:
-    "head head head head head head head head head head"
-    "rec video video video video video video video chat chat"
-    "rec video video video video video video video chat chat"
-    "info info info info info info info info news news"
-    "info info info info info info info info news news"
-    "scores scores scores scores scores scores scores scores news news"
-    "foot foot foot foot foot foot foot foot foot foot";
+    .wrapper{
+        grid-template-areas:
+        "head head head head head head head head head head"
+        "rec video video video video video video video chat chat"
+        "rec video video video video video video video chat chat"
+        "info info info info info info info info news news"
+        "info info info info info info info info news news"
+        "scores scores scores scores scores scores scores scores news news"
+        "foot foot foot foot foot foot foot foot foot foot";
     }
 }
-
-
 @media only screen and (min-width: 600px) and (max-width: 799px){
-.wrapper{
-    grid-template-areas:
-    "head head head head head head head head head head"
-    "rec video video video video video video video chat chat"
-    "rec video video video video video video video chat chat"
-    "info info info info info info info info news news"
-    "info info info info info info info info news news"
-    "scores scores scores scores scores scores scores scores news news"
-    "foot foot foot foot foot foot foot foot foot foot";
+    .wrapper{
+        grid-template-areas:
+        "head head head head head head head head head head"
+        "rec video video video video video video video chat chat"
+        "rec video video video video video video video chat chat"
+        "info info info info info info info info news news"
+        "info info info info info info info info news news"
+        "scores scores scores scores scores scores scores scores news news"
+        "foot foot foot foot foot foot foot foot foot foot";
     }
 }
-
-
 @media only screen and (max-width: 599px){
-.wrapper{
-    grid-template-areas:
+    .wrapper{
+        grid-template-areas:
         "head head head head head head head head head head"
         "video video video video video video video video video video"
         "info info info info info info info info info info"
@@ -211,22 +203,15 @@ img {
         "news news news news news news news news news news"
         "foot foot foot foot foot foot foot foot foot foot";
     }
-
     .recommended{
         display: none;
     }
 }
-
-
-
-
 /* Animation for games */
-
 .games{
     z-index: 1;
     transition: all .2s ease-in-out;
 }
-
 .games:hover{
     z-index: 2;
     transition: all .2s ease-in-out;
@@ -234,14 +219,8 @@ img {
     /*box-shadow: 0px 0px 50px #141414;*/
     /*box-shadow: 0px 0px 150px #000000;*/
 }
-
-
-
-
-
-
+<<<<<<< HEAD
 /*TODO change classes to navbar IDs*/
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -249,11 +228,9 @@ ul {
     overflow: hidden;
     background-color: #333;
 }
-
 li {
     float: left;
 }
-
 li a {
     display: block;
     color: white;
@@ -261,14 +238,73 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover:not(.active) {
     background-color: #111;
 }
-
 .active {
     background-color: #4CAF50;
 }
+/* for events.html */
+.wrapper-events {
+    transition: all .5s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
+    grid-gap: 10px;
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". ee e22 e23 e24 e25 e26 e27 e28 ."
+    ". ee e22 e23 e24 e25 e26 e27 e28 ."
+    ". e31 e32 e33 e34 e35 e36 e37 e38 .";
+}
+.events-cal-container{
+    grid-area: 2 / 2 / 2 / 10;
+}
+.events-cal{
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin: 5px;
+}
+.event{
+    height: 250px;
+    width: 100%;
+    float: left;
+    opacity: 0.9;
+    background: #9B9B9B;
+    border-radius: 8px;
+    margin: 5px;
+    transition: all .2s ease-in-out;
+}
+.event:hover {
+    z-index: 3;
+    transition: all .2s ease-in-out;
+    transform: scale(1.03);
+}
+.event-text{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/*grid-area: y / x / y / x;*/
+#events-cal1{ grid-area:  3 / 2 / 9 / 3; }
+#events-cal2{ grid-area:  3 / 3 / 9 / 4; }
+#events-cal3{ grid-area:  3 / 4 / 9 / 5; }
+#events-cal4{ grid-area:  3 / 5 / 9 / 6; }
+#events-cal5{ grid-area:  3 / 6 / 9 / 7; }
+#events-cal6{ grid-area:  3 / 7 / 9 / 8; }
+#events-cal7{ grid-area:  3 / 8 / 9 / 9; }
+#event-1{ grid-area:  4 / 2 / 10 / 3; }
+#event-2{ grid-area:  5 / 3  / 10 / 3; }
+#event-3{ grid-area:  4 / 4  / 10 / 4; height: 150px; background: #5f64ff; }
+#event-4{ grid-area:  6 / 4  / 10 / 4; }
+#event-5{ grid-area:  4 / 5  / 10 / 5; }
+#event-6{ grid-area:  3 / 6  / 10 / 6; }
+#event-7{ grid-area:  5 / 7  / 10 / 7; background: #ac00b0;}
+#event-8{ grid-area:  6 / 8  / 10 / 8; height: 100px; background: #00a1f2; }
+=======
 
 
 
@@ -283,3 +319,9 @@ li a:hover:not(.active) {
 
 
 
+
+
+
+
+
+>>>>>>> 98a4d55403665708065def4529fccd42235b6d59
