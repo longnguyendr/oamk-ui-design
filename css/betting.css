@@ -1,0 +1,323 @@
+
+
+body {
+    color: #ffffff;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.dragdeco
+{
+    border-bottom: 1px solid white;
+}
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: black;
+    text-align: center;
+    width: 200px;
+    border-radius: 11px 11px 10px 10px;
+    text-decoration: none;
+    opacity: 0.9;
+    
+}
+
+#mydiv:hover
+{
+    box-shadow: 3px 8px 12px 2px rgba(0,0,0,0.4);
+    
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------ */
+/* new CSS Grid */
+
+
+.head {
+    grid-area: head;
+    color: #ffffff;
+    /*grid-column: 2 / 3;*/
+    /*grid-row: 1;*/
+    align-items: center;
+    align-self: center;
+}
+
+.head h1 {
+    font-weight: 600;
+}
+
+.bettable {
+    grid-area: bettable;
+    z-index: 1;
+    /*border: 3px solid #f7f7f7*/
+    overflow: hidden;
+    
+}
+.dragdiv{
+    grid-area: dragdiv;
+}
+
+.dragdiv input
+{
+    width: 20px;
+    height: 20px;
+}
+
+.tabcontent
+{
+    grid-area: tabs;
+    display: none;
+    padding: 6px 12px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.tabcontent table
+{
+    padding: 30px 30px 30px 30px;
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+    border-radius: 10px 10px 10px 10px;
+    border-collapse: collapse;
+}
+.tabcontent td 
+{
+    padding: 20px 20px 20px 20px;
+    border-right: 1px dashed black;
+}
+.tabcontent td:last-child
+{
+    padding: 20px 20px 20px 20px;
+    border: 0;
+}
+.tabcontent th
+{
+    padding: 20px 20px 20px 30px;
+    border-bottom: 1px dashed black;
+    border-right: 1px dashed black;
+}
+.tabcontent th:last-child
+{
+    padding: 20px 20px 20px 30px;
+    border-bottom: 1px dashed black;
+    border-right: 0;
+}
+.tabcontent table:hover
+{
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.4);
+}
+.foot{
+    grid-area: foot;
+}
+
+
+
+.wrapper {
+    transition: all .5s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-image: linear-gradient(-134deg, #3023AE 0%, #C86DD7 100%);
+    grid-gap: 10px;
+    grid-template-areas:
+        ". head head head head head head head head ."
+        ". bettable bettable bettable bettable bettable bettable bettable dragdiv ."
+        ". tabs tabs tabs tabs tabs tabs tabs tabs ."       
+        ". foot foot foot foot foot foot foot foot .";
+}
+
+
+
+
+
+/* ------------------------------------- */
+/* ------ Responsive breakpoints ------- */
+/* ------ for devices ------------------ */
+/* ------------------------------------- */
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1200px){
+.wrapper{
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". bettable bettable bettable bettable bettable bettable bettable dragdiv ."
+    ". tabs tabs tabs tabs tabs tabs tabs tabs ."       
+    ". foot foot foot foot foot foot foot foot .";
+    }
+}
+
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 799px){
+.wrapper{
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". bettable bettable bettable bettable bettable bettable bettable dragdiv ."
+    ". tabs tabs tabs tabs tabs tabs tabs tabs ."       
+    ". foot foot foot foot foot foot foot foot .";
+    }
+}
+
+
+@media only screen and (max-device-width: 599px){
+.wrapper{
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". bettable bettable bettable bettable bettable bettable bettable dragdiv ."
+    ". tabs tabs tabs tabs tabs tabs tabs tabs ."       
+    ". foot foot foot foot foot foot foot foot .";
+    }
+
+    .recommended{
+        display: none;
+    }
+}
+
+
+
+
+
+/* ------------------------------------- */
+/* ------ Responsive breakpoints ------- */
+/* ------ for resolutions -------------- */
+/* ------------------------------------- */
+
+
+@media only screen and (min-width: 800px) and (max-width: 1100px){
+.wrapper{
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". bettable bettable bettable bettable bettable bettable bettable dragdiv ."
+    ". tabs tabs tabs tabs tabs tabs tabs tabs ."       
+    ". foot foot foot foot foot foot foot foot .";
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 799px){
+.wrapper{
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". bettable bettable bettable bettable bettable bettable bettable dragdiv ."
+    ". tabs tabs tabs tabs tabs tabs tabs tabs ."       
+    ". foot foot foot foot foot foot foot foot .";
+    }
+}
+
+
+@media only screen and (max-width: 599px){
+.wrapper{
+    grid-template-areas:
+    ". head head head head head head head head ."
+    ". bettable bettable bettable bettable bettable bettable bettable dragdiv ."
+    ". tabs tabs tabs tabs tabs tabs tabs tabs ."       
+    ". foot foot foot foot foot foot foot foot .";
+    }
+
+    .recommended{
+        display: none;
+    }
+}
+
+
+
+
+
+/*TODO change classes to navbar IDs*/
+.bettable ul
+{
+        list-style-type: none;
+        margin:0 ;
+        padding-left: 80px;
+        overflow: hidden;
+    
+}
+.bettable li {
+    float: left;
+}
+
+.bettable li a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+/* Style the buttons inside the tab */
+.bettable  button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #333;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.bettable button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.bettable button.active {
+    background-color: black;
+}
+
+
+
+.head ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.head li {
+    float: left;
+}
+
+.head li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 35px 14px 35px;
+    text-decoration: none;
+    font-size: 14pt;
+}
+
+.head li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+
