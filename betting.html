@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>eSporthub</title>
+    <link rel="stylesheet" href="css/betting.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <h1>eSporthub</h1>
+            <ul>
+                <li><a href="index.html" title="">Home</a></li>
+                <li><a href="events.html" title="">Events</a></li>
+                <li><a href="store.html" title="">Store</a></li>
+                <li><a href="news.html" title="">News</a></li>
+                <li><a href="betting.html" title="">Betting</a></li>
+                <li><a href="login.html" title="">Login</a></li>
+            </ul>
+            <h2>Betting table</h2>
+            You can drag the Betting slip
+        </div>
+        
+        <div class="bettable">
+                
+                <button class="tablinks" onclick="opentable(event, 'Upcomminggames')">Upcomming games</button>
+                <button class="tablinks" onclick="opentable(event, 'Outright')">Outright</button>
+                <button class="tablinks" onclick="opentable(event, 'Result')">Result</button>
+              </div>
+              
+              <div id="Upcomminggames" class="tabcontent">
+
+                <table>
+                    <tr>
+                        <th>Status</th>
+                        <th>Team 1</th>
+                        <th>Ratio T1</th>
+                        <th>Ratio T2</th>
+                        <th>Team 2</th>
+                    <tr>
+                    <tr>
+                        <td>LIVE</td>
+                        <td id="demos1">SKT 1</td>
+                        <td><button id=BT_1 type=button onclick=copy_button_text('BT_1','field1')>1.5</button></td>
+                        <td><button id=BT_6 type=button onclick=copy_button_text('BT_6','field1')>1.7</button></td>
+                        <td id="demos6">Samsung Galaxy</td>
+                    </tr>
+                    <tr>
+                        <td>LIVE</td>
+                        <td id="demos2">Afreeca</td>
+                        <td><button id=BT_2 type=button onclick=copy_button_text('BT_2','field1')>2.5</button></td>
+                        <td><button id=BT_7 type=button onclick=copy_button_text('BT_7','field1')>0.5</button></td>
+                        <td id="demos7">Longzu</td>
+                    </tr>
+                    <tr>
+                        <td>LIVE</td>
+                        <td id="demos3">JinAir</td>
+                        <td><button id=BT_3 type=button onclick=copy_button_text('BT_3','field1')>2.1</button></td>
+                        <td><button id=BT_8 type=button onclick=copy_button_text('BT_8','field1')>1.1</button></td>
+                        <td id="demos8">BBQ Oliver</td>
+                    </tr>
+                    <tr>
+                        <td>LIVE</td>
+                        <td id="demos4">Ace</td>
+                        <td><button id=BT_4 type=button onclick=copy_button_text('BT_4','field1')>2.9</button></td>
+                        <td><button id=BT_9 type=button onclick=copy_button_text('BT_9','field1')>3.9</button></td>
+                        <td id="demos9">MVP</td>
+                    </tr>
+                    <tr>
+                        <td>LIVE</td>
+                        <td id="demos5">RoxTiger</td>
+                        <td><button id=BT_5 type=button onclick=copy_button_text('BT_5','field1') >1.9</button></td>
+                        <td><button id=BT_10 type=button onclick=copy_button_text('BT_10','field1')>3.5</button></td>
+                        <td id="demos10">Kongdoo</td>
+                    </tr>
+                </table>
+              </div>
+              
+              <div id="Outright" class="tabcontent">
+                <p>The content is not available right now</p> 
+              </div>
+              
+              <div id="Result" class="tabcontent">
+                    <table>
+                            <tr>
+                                <th>Team 1</th>
+                                <th>Score T1</th>
+                                <th>Score T2</th>
+                                <th>Team 2</th>
+                            <tr>
+                            <tr>
+                                <td>SKT 1</td>
+                                <td>1</td>
+                                <td>3</td>
+                                <td>Samsung Galaxy</td>
+                            </tr>
+                            <tr>
+                                <td>Afreeca</td>
+                                <td>5</td>
+                                <td>0</td>
+                                <td>Longzu</td>
+                            </tr>
+                            <tr>
+                                <td>JinAir</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>BBQ Oliver</td>
+                            </tr>
+                            <tr>
+                                <td>Ace</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>MVP</td>
+                            </tr>
+                            <tr>
+                                <td>RoxTiger</td>
+                                <td>6</td>
+                                <td>4</td>
+                                <td>Kongdoo</td>
+                            </tr>
+                        </table>
+                        
+              </div>
+              <div class="dragdiv"> 
+              <div id="mydiv">
+                <div id="mydivheader">BETTING SLIP</div>
+                <div class="dragdeco">
+                    
+                    <span style="padding-right:10px;"> RATE: </span><input type="text" id="field1" disabled> 
+                    
+                    <p id="demos"> </p>
+                    
+                    <select id="po" onload="" onchange="price1();">
+                        <option value='1'>0 EUR</option>
+                        <option>100 EUR</option>
+                        <option>200 EUR</option>
+                        <option>300 EUR</option>
+                    </select>
+
+                </div>
+                <div ></div>
+                <p id="dprice">SINGLE STAKE:</p>
+                <p id="total">TOTAL WIN:</p>
+                <button id="bpayment" type="button" onclick=""> Place Bet</button>
+              </div>
+            </div>
+          <script src="js/betting.js"></script>
+    </div>
+    <!-- div wrapper -->
+</body>
+
+</html>
